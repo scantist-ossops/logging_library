@@ -38,7 +38,7 @@ module Ecraft
               LINE_PREPEND +
               (message.backtrace || []).join("\n#{LINE_PREPEND}")
           else
-            msg.inspect
+            message.inspect
           end
         end
 

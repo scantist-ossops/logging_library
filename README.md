@@ -11,7 +11,7 @@ Wraps the functionality of [mixlog-log](https://github.com/chef/mixlib-log).
 
 ## Installation
 
-Add this line to your application's `Gemfile`, inside a `source` block:
+Add this line to your application's `Gemfile`:
 
 ```ruby
 gem 'logging_library'

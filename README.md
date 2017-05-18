@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ecraft/logging_library.svg?branch=master)](https://travis-ci.org/ecraft/logging_library)
+
 # LoggingLibrary
 
 This library provides logging support for your application or framework, with an opinionated default configuration in terms of log

@@ -83,6 +83,23 @@ Preview API documentation locally with
 bundle exec yard server -r
 ```
 
+### Releasing a new version
+
+- Bump the version in `version.rb`
+- Create the tag:
+
+  ```
+  $ git release v1.0.x`
+  ```
+
+- Build the gemfile and push it to Rubygems.org:
+
+  ```shell
+  $ bundle exec rake build release
+  ```
+
+- Generate the changelog (`cargo install changelog-rs && changelog-rs .`) and copy the relevant lines to [the releases page](https://github.com/ecraft/logging_library/releases).
+
 ### License
 
 MIT

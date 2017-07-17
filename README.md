@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ecraft/logging_library.svg?branch=master)](https://travis-ci.org/ecraft/logging_library)
+[![Build Status](https://travis-ci.org/ecraft/logging_library.svg?branch=master)](https://travis-ci.org/ecraft/logging_library) [![Gem Version](https://badge.fury.io/rb/logging_library.svg)](https://badge.fury.io/rb/logging_library)
 
 # LoggingLibrary
 

@@ -7,3 +7,6 @@ require 'logging_library/version'
 module LoggingLibrary
   Loggable = Mixins::Loggable
 end
+
+# Avoid buffering output when running under e.g. Foreman.
+$stderr.sync = true

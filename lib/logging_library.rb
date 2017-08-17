@@ -6,6 +6,8 @@ require 'logging_library/version'
 
 module LoggingLibrary
   Loggable = Mixins::Loggable
+
+  LOG_LEVELS = Mixlib::Log::LEVELS.keys.freeze
 end
 
 # Avoid buffering output when running under e.g. Foreman.

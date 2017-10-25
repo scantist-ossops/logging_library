@@ -11,4 +11,5 @@ module LoggingLibrary
 end
 
 # Avoid buffering output when running under e.g. Foreman.
+$stdout.sync = true
 $stderr.sync = true

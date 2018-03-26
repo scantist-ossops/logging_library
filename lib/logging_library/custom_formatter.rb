@@ -25,9 +25,11 @@ module LoggingLibrary
         Rainbow(formatted_message).color(text_color_for_severity)
       end
 
-      # Converts some argument to a Logger.severity() call to a string.  Regular strings pass through like
-      # normal, Exceptions get formatted as "message (class)\nbacktrace", and other random stuff gets
-      # put through "object.inspect"
+      # Converts some argument to a Logger.severity() call to a string.
+      # Regular strings pass through like normal, Exceptions get formatted as
+      # "message (class)\nbacktrace", and other random stuff gets put through
+      # "object.inspect"
+
       def formatted_message
         case message
         when ::String
@@ -94,7 +96,8 @@ module LoggingLibrary
         end
       end
 
-      # Returns a somewhat lighter color for the time, to make it stand out in the presentation.
+      # Returns a somewhat lighter color for the time, to make it stand out
+      # in the presentation.
       def time_color_for_severity
         case severity.downcase.to_sym
         when :fatal then '#FF00FF'
@@ -106,12 +109,14 @@ module LoggingLibrary
         end
       end
 
-      # We want "something" to stand out. If time isn't being shown, we utilize its color for displaying the severity.
+      # We want "something" to stand out. If time isn't being shown, we
+      # utilize its color for displaying the severity.
       alias_method :color_for_severity_lighter, :time_color_for_severity
 
       def show_time?
-        # When STDERR is redirected, we are likely running as a service with a syslog daemon already appending a timestamp to the
-        # line (and two timestamps is redundant).
+        # When STDERR is redirected, we are likely running as a service with a
+        # syslog daemon already appending a timestamp to the line (and two
+        # timestamps is redundant).
         tty?
       end
 
